@@ -1,0 +1,513 @@
+/* Reset and font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #1e3a8a;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: url('https://via.placeholder.com/1600x800?text=Empowering+Communities') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 0 0 2rem 2rem;
+    background-attachment: fixed;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: white;
+    color: #1e3a8a;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e0e7ff;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem 0;
+    background: #f3f4f6;
+}
+
+.services h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-item {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.service-item h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+/* Slider Section */
+.slider {
+    margin: 3rem 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+    border-radius: 1rem;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 3rem 0;
+    background: #3b82f6;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.cta h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #1e3a8a;
+    color: white;
+    border-radius: 2rem 2rem 0 0;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .services {
+        padding: 2rem 0;
+    }
+
+    .cta h3 {
+        font-size: 1.6rem;
+    }
+}
+/* Contact Form */
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    margin-top: 1.5rem;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 1rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Services Preview */
+.services {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.services h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.service h4 {
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    font-size: 0.95rem;
+    color: #555;
+}
+/* About Page */
+.about-page {
+    padding: 4rem 0;
+}
+
+.vision-mission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vision, .mission {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.vision h3, .mission h3 {
+    color: #0077cc;
+}
+
+.team {
+    margin-top: 3rem;
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background: #004aad; /* Deep Blue */
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    border-bottom: 2px solid yellow;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(90deg, #004aad 50%, #f9c80e 50%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: yellow;
+    color: #004aad;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Quotes */
+.quotes {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.quotes blockquote {
+    font-style: italic;
+    margin: 1rem 0;
+    color: #004aad;
+}
+
+/* Services */
+.services {
+    margin: 4rem 0;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service h4 {
+    color: #f9c80e; /* Yellow */
+}
+
+footer {
+    background: #004aad;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .services-list {
+    flex: 1 1 500px;
+  }
+  
+  .services-message {
+    flex: 1 1 300px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    color: #0077b6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .services-message h3 {
+    margin-top: 0;
+  }
+  
+  .services-message strong {
+    color: #ffb300; /* Yellow highlight for emphasized words */
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  }
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .services-list {
+    flex: 1 1 500px;
+  }
+  
+  .services-message {
+    flex: 1 1 300px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    color: #0077b6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .services-message h3,
+  .services-message h4 {
+    margin-top: 0;
+  }
+  
+  .services-message strong {
+    color: #ffb300; /* Yellow highlight for emphasized words */
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+    }
+  }
+    
